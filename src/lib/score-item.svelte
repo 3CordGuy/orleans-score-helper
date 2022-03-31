@@ -7,7 +7,8 @@
 
 <div class="score-item">
 	<div class="score-item-header">
-		<span><strong>{name}</strong> qty:</span> <span class="value"><strong> {value}</strong></span>
+		<span class="label"><strong>{name}</strong> qty</span>
+		<span class="value"> {value}</span>
 	</div>
 	<div class="score-item-body">
 		<div class="buttons">
@@ -41,22 +42,41 @@
 		align-items: center;
 		background: #bbb;
 		color: #fff;
-		justify-content: space-around;
-		padding-left: 0.2em;
-		padding-right: 0.2em;
+		justify-content: space-between;
+		border-bottom: 1px solid #bbb;
+	}
+
+	.score-item .label {
+		padding-left: 0.7em;
+		font-size: 0.25em;
+	}
+
+	.score-item .label strong {
+		padding: 0 0.25em;
+		font-size: 2em;
 	}
 
 	.score-item-header .value {
-		font-size: 2em;
-		padding: 0 0.25em;
+		font-size: 1.2em;
+		font-weight: 100;
+		height: 100%;
+		align-items: center;
 		background: #eee;
-		border-bottom: 1px solid #bbb;
+		padding: 0 0.5em;
 		color: rgb(2, 142, 202);
 	}
 
 	@media (max-width: 480px) {
 		.score-item-header {
 			font-size: 0.5em;
+		}
+		.score-item-header .label {
+			padding-left: 2em;
+		}
+
+		.score-item-header .value {
+			font-size: 2em;
+			padding: 0 0.75em;
 		}
 	}
 
@@ -81,6 +101,7 @@
 		border-radius: 50%;
 		font-size: 1em;
 		box-shadow: 10px 10px 20px #ddd, -10px -10px 20px #fff;
+		color: rgb(2, 142, 202);
 	}
 	.score-item .buttons button:active {
 		background: #eee;
