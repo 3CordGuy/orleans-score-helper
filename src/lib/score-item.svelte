@@ -7,7 +7,7 @@
 
 <div class="score-item">
 	<div class="score-item-header">
-		<span>{name} qty:</span> <span><strong> {value}</strong></span>
+		<span><strong>{name}</strong> qty:</span> <span class="value"><strong> {value}</strong></span>
 	</div>
 	<div class="score-item-body">
 		<div class="buttons">
@@ -23,10 +23,10 @@
 		flex-direction: column;
 		align-items: center;
 		flex-shrink: 0;
-		width: 45%;
+		width: 48%;
 		border: 1px solid #eee;
 		border-radius: 0.7em;
-		overflow: clip;
+		overflow: hidden;
 		background: #eee;
 		box-shadow: 0px -5px 6px 0px #ccc;
 		max-width: 220px;
@@ -34,9 +34,9 @@
 	.score-item-header {
 		display: flex;
 		flex-direction: row;
-		font-size: 1.1em;
+		font-size: 1.5em;
+		font-weight: 200;
 		width: 100%;
-		padding: 0.2em 0;
 		text-transform: uppercase;
 		align-items: center;
 		background: #bbb;
@@ -44,6 +44,14 @@
 		justify-content: space-around;
 		padding-left: 0.2em;
 		padding-right: 0.2em;
+	}
+
+	.score-item-header .value {
+		font-size: 2em;
+		padding: 0 0.25em;
+		background: #eee;
+		border-bottom: 1px solid #bbb;
+		color: rgb(2, 142, 202);
 	}
 
 	@media (max-width: 480px) {

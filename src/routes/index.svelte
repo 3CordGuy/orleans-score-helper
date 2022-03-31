@@ -58,12 +58,12 @@
 
 	h1 {
 		text-transform: uppercase;
-		font-size: 4rem;
+		font-size: 3rem;
 		font-weight: 800;
 		line-height: 1.1;
 		margin: 2rem auto;
 		max-width: 14rem;
-		color: #aaa;
+		color: rgb(2, 142, 202);
 		/* text-shadow: 10px 10px 20px #ddd,
                   -10px -10px 20px #fff; */
 
